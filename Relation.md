@@ -9,7 +9,7 @@ public function childs(){
 
 ### Child Model
 ```php
-public function user(){
+public function parent(){
   return $this->belongsTo(User::class, 'user_id', 'uuid');
 }
 ```
