@@ -9,7 +9,20 @@ const onSubmit = () => {
 }
 ```
 
-### validate
+```jsx
+import { Inertia } from '@inertiajs/inertia'
+
+export default function Example () {
+  return(
+    <Link href={ route('example.index') } method='post' as="button" data={{ uuid: props.res.uuid }}>
+      { props.res.name }
+    </Link>
+  )
+}
+
+```
+
+### Validate for react-hook-form
 ```jsx
 import { useForm } from "react-hook-form"
 
