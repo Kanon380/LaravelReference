@@ -10,7 +10,7 @@ const onSubmit = () => {
 ```
 
 ```jsx
-import { Inertia } from '@inertiajs/inertia'
+import { Head, Link } from '@inertiajs/inertia-react';
 
 export default function Example () {
   return(
