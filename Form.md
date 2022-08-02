@@ -22,7 +22,7 @@ export default function Example () {
   })
   
   return(
-    <form>
+    <form onSubmit={ handleSubmit(onSubmit) }>
       <input {...register("name", { required: true })} type="text" />
       <button type='submit'>Submit</button>
       {
