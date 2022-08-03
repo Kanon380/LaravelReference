@@ -42,7 +42,7 @@ export default function Example () {
       <input {...register("name", { required: true })} type="text" />
       <button type='submit'>Submit</button>
       {
-        errors.product?.type === 'required' &&
+        errors.name?.type === 'required' &&
         <p>
           Name is required.
         </p>
