@@ -33,7 +33,7 @@ export default function Example () {
       name: '',
     }
   })
-  const onSubmit = () => {
+  const onSubmit = (data) => {
     Inertia.get('/url', data)
   }
   
