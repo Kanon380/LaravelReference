@@ -33,6 +33,9 @@ export default function Example () {
       name: '',
     }
   })
+  const onSubmit = () => {
+    Inertia.get('/url', data)
+  }
   
   return(
     <form onSubmit={ handleSubmit(onSubmit) }>
