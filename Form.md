@@ -40,13 +40,10 @@ export default function Example () {
   return(
     <form onSubmit={ handleSubmit(onSubmit) }>
       <input {...register("name", { required: true })} type="text" />
+      { errors.name?.type === 'required' && <p>Name is required.</p> }
+      <input {...register("number", { required: true, min: 1, max: 10 })} type="number" />
+      { errors.number?.type === 'required' && <p>Name is required.</p> }
       <button type='submit'>Submit</button>
-      {
-        errors.name?.type === 'required' &&
-        <p>
-          Name is required.
-        </p>
-      }
     </form>
   )
 }
