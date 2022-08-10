@@ -43,6 +43,8 @@ export default function Example () {
       { errors.name?.type === 'required' && <p>Name is required.</p> }
       <input {...register("number", { required: true, min: 1, max: 10 })} type="number" />
       { errors.number?.type === 'required' && <p>Name is required.</p> }
+      { errors.number?.type === 'min' && <p className='mt-3'>最低1までです。</p> }
+      { errors.number?.type === 'max' && <p className='mt-3'>最大10までです。</p> }
       <button type='submit'>Submit</button>
     </form>
   )
